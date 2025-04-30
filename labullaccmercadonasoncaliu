@@ -1,0 +1,7 @@
+cd loteria-la-bulla
+git init
+git remote add origin https://github.com/tu-usuario/loteria-la-bulla.git
+git add .
+git commit -m "Implementación global: optimización, PWA, SEO, accesibilidad y CI"
+git branch -M main
+git push -u origin main
