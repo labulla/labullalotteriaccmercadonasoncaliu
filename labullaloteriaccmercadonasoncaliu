@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lotería La Bulla en Palmanova. Administración nº3. Juega La Primitiva, Euromillones, Bonoloto y más online." />
+  <meta property="og:title" content="Lotería La Bulla - Palmanova" />
+  <meta property="og:description" content="Administración nº3 en C.C. Mercadona Son Caliu. Compra tus boletos online con TuLotero." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:url" content="https://loteriamallorca.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://loteriamallorca.com" />
+  <link rel="preconnect" href="https://tu-lotero.s3.amazonaws.com" />
+  <link rel="preload" as="image" href="/logo.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>Lotería La Bulla - Palmanova</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans" role="document">
+  <!-- Banner -->
+  <header class="bg-blue-800 text-white p-6 text-center" role="banner">
+    <img src="/logo.png" alt="Logo Lotería La Bulla" class="mx-auto w-20 mb-2" loading="lazy">
+    <h1 class="text-3xl font-bold">Lotería La Bulla</h1>
+    <p class="text-lg">Administración Nº3 - Palmanova</p>
+  </header>
+
+  <!-- Contacto -->
+  <main class="p-6" role="main">
+    <section aria-labelledby="contacto" class="text-center mb-8">
+      <h2 id="contacto" class="text-xl font-semibold mb-2">Contacto</h2>
+      <address class="not-italic">
+        <p>C/ Zaragoza, 1 · C.C. Mercadona Son Caliu</p>
+        <p>07181 Palmanova - Calvià · MALLORCA · ESPAÑA</p>
+        <div class="mt-4 space-y-1">
+          <p>📞 <a href="tel:+34971683163" class="text-blue-600 focus:outline focus:outline-2 focus:outline-offset-2">971 683 163</a></p>
+          <p>📱 <a href="https://wa.me/34689882025" class="text-green-600 focus:outline focus:outline-2 focus:outline-offset-2">689 882 025</a></p>
+          <p>✉️ <a href="mailto:loteria@loteriamallorca.com" class="text-blue-600 focus:outline focus:outline-2 focus:outline-offset-2">loteria@loteriamallorca.com</a></p>
+          <p>🌐 <a href="https://loteriamallorca.com" class="text-blue-600 focus:outline focus:outline-2 focus:outline-offset-2">loteriamallorca.com</a></p>
+        </div>
+      </address>
+    </section>
+
+    <!-- Ubicación -->
+    <section aria-labelledby="ubicacion" class="text-center mb-8">
+      <h2 id="ubicacion" class="text-xl font-semibold mb-4">¿Dónde estamos?</h2>
+      <a href="https://goo.gl/maps/mjtpR35ztzW9Ykcy5" target="_blank" rel="noopener noreferrer">
+        <img src="/img/mapa-palmanova.webp" alt="Mapa de ubicación de Lotería La Bulla" class="rounded shadow mx-auto" loading="lazy">
+      </a>
+      <div class="mt-4">
+        <a href="https://goo.gl/maps/mjtpR35ztzW9Ykcy5" class="bg-blue-600 text-white px-4 py-2 rounded focus:outline focus:outline-2 focus:outline-offset-2">Abrir en Google Maps</a>
+      </div>
+    </section>
+
+    <!-- TuLotero -->
+    <section aria-labelledby="tulotero" class="bg-gray-100 p-6 text-center mb-8">
+      <h2 id="tulotero" class="text-xl font-semibold mb-2">¡Juega online con TuLotero!</h2>
+      <p class="mb-4">Únete al Club 01155 y juega La Primitiva y más desde tu móvil.</p>
+      <img src="https://tu-lotero.s3.amazonaws.com/img/app-promo.png" alt="Descarga la app TuLotero" class="mx-auto w-52 mb-4" loading="lazy">
+      <a href="https://www.tulotero.es" class="bg-green-600 text-white px-4 py-2 rounded focus:outline focus:outline-2 focus:outline-offset-2">Descargar App</a>
+    </section>
+  </main>
+
+  <!-- Juegos -->
+  <footer class="bg-blue-800 text-white p-6 text-center" role="contentinfo">
+    <p class="mb-2">Juegos disponibles:</p>
+    <nav aria-label="Logos de juegos disponibiles">
+      <ul class="flex justify-center gap-4 flex-wrap">
+        <li><img src="https://www.loteriasyapuestas.es/imagenes/logo_la_primitiva.svg" alt="La Primitiva" class="w-8" loading="lazy"></li>
+        <li><img src="https://www.loteriasyapuestas.es/imagenes/logo_euromillones.svg" alt="Euromillones" class="w-8" loading="lazy"></li>
+        <li><img src="https://www.loteriasyapuestas.es/imagenes/logo_bonoloto.svg" alt="Bonoloto" class="w-8" loading="lazy"></li>
+        <li><img src="https://www.loteriasyapuestas.es/imagenes/logo_loteria_nacional.svg" alt="Lotería Nacional" class="w-8" loading="lazy"></li>
+        <li><img src="https://www.loteriasyapuestas.es/imagenes/logo_el_gordo.svg" alt="El Gordo de la Primitiva" class="w-8" loading="lazy"></li>
+      </ul>
+    </nav>
+    <p class="mt-4 text-sm">&copy; 2025 Lotería La Bulla · Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+</body>
+</html>
+{
+  "short_name": "La Bulla",
+  "name": "Lotería La Bulla - Palmanova",
+  "icons": [
+    { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#1e40af",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary"
+}
+
+const CACHE_NAME = 'lb-cache-v1';
+const ASSETS = [
+  '/', '/index.html', '/favicon.png', '/logo.png',
+  '/manifest.json',
+  '/img/mapa-palmanova.webp',
+  'https://cdn.tailwindcss.com'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
+  );
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(
+        keys.filter(key => key !== CACHE_NAME)
+            .map(key => caches.delete(key))
+      )
+    )
+  );
+});
+
+self.addEventListener('fetch', event => {
+  const { request } = event;
+  if (request.method !== 'GET') return;
+  event.respondWith(
+    caches.match(request).then(cached =>
+      cached || fetch(request).then(response => {
+        return caches.open(CACHE_NAME).then(cache => {
+          cache.put(request, response.clone());
+          return response;
+        });
+      })
+    )
+  );
+});
+module.exports = {
+  content: ['./index.html'],
+  theme: { extend: {} },
+  plugins: [],
+};
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://loteriamallorca.com/</loc>
+    <lastmod>2025-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+User-agent: *
+Allow: /
+Sitemap: https://loteriamallorca.com/sitemap.xml
+name: "Lighthouse CI"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: treosh/lighthouse-ci-action@9
+        with:
+          configPath: .lighthouserc.js
+          uploadArtifacts: true
+module.exports = {
+  ci: {
+    collect: {
+      startServerCommand: 'serve', // o el comando que uses para servir
+      url: ['http://localhost:5000'],
+      numberOfRuns: 3
+    },
+    assert: {
+      assertions: {
+        'categories:performance': ['error', { minScore: 0.9 }],
+        'categories:accessibility': ['warn', { minScore: 0.9 }],
+        'categories:best-practices': ['warn', { minScore: 0.9 }],
+        'categories:seo': ['warn', { minScore: 0.9 }],
+        'categories:pwa': ['warn', { minScore: 0.9 }]
+      }
+    }
+  }
+};
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lotería La Bulla",
+  "image": "https://loteriamallorca.com/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C/ Zaragoza, 1, C.C. Mercadona Son Caliu",
+    "addressLocality": "Palmanova",
+    "addressRegion": "Mallorca",
+    "postalCode": "07181",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34 971 683 163",
+  "openingHours": ["Mo-Sa 09:00-21:00"],
+  "url": "https://loteriamallorca.com"
+}
+</script>
+
